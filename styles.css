@@ -1,0 +1,187 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #0f3460;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li button {
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li button:hover {
+    background-color: #00ffff; /* Changed to cyan */
+    border-radius: 5px;
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f3460, #16213e);
+    padding: 20px;
+    border: 2px solid #0f3460;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+    width: 200px; /* Increased size */
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 6px solid #00ffff; /* Changed to cyan */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00ffff; /* Changed to cyan */
+}
+
+.social-icons a {
+    margin: 0 15px;
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffff; /* Changed to cyan */
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 20px;
+    margin: 40px 0;
+    text-align: center;
+    background: #16213e;
+    border: 2px solid #00ffff; /* Changed to cyan */
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Background Gradient for Each Section */
+#skills {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+#projects {
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
+}
+
+#education {
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
+}
+
+#certifications {
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+}
+
+#contact {
+    background: linear-gradient(135deg, #0f3460, #16213e);
+}
+
+/* Grid Structure for Box Layouts */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid div {
+    background-color: #0f3460;
+    padding: 20px;
+    border: 1px solid #00ffff; /* Changed to cyan */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grid div h3 {
+    color: #00ffff; /* Changed to cyan */
+}
+
+/* Contact Section */
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #00ffff; /* Changed to cyan */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #33ffff; /* Lighter cyan on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-list li button {
+        font-size: 16px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}

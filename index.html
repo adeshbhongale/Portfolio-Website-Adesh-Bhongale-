@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adesh Bhongale Portfolio</title>
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><button onclick="scrollToSection('home')">Home</button></li>
+                <li><button onclick="scrollToSection('skills')">Skills</button></li>
+                <li><button onclick="scrollToSection('projects')">Projects</button></li>
+                <li><button onclick="scrollToSection('education')">Education</button></li>
+                <li><button onclick="scrollToSection('certifications')">Certifications</button></li>
+                <li><button onclick="scrollToSection('contact')">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Adesh.jpg-GWvCgKb74vGepnUJssupCribOd0Yti.jpeg" alt="Adesh Bhongale" class="profile-img">
+            <h1>Adesh Bhongale</h1>
+            <p>Computer Science Engineer | Web Developer | Sotware devloper</p>
+            <div class="social-icons">
+                <a href="https://github.com/AdeshBhongale" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/AdeshBhongale" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/AdeshBhongale" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:adeshbhongale03@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>Dart</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CourseWork</h3>
+                    <ul>
+                        <li>Data Structure and Algorithm</li>
+                        <li>Object Oriented Programming</li>
+                        <li>Cloud Computing</li>
+                        <li>Database</li>
+                        <li>Computer Network</li>
+                        <li>Operating System</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Tools and Frameworks</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Excel</li>
+                        <li>Tableau</li>
+                        <li>Git-Github</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div>
+                    <h3>Pro Manage Website</h3>
+                    <p>Technologies: HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</p>
+                    <p>Pro Manage is a comprehensive task management web application...</p>
+                    <a href="https://github.com/AdeshBhongale/pro-manage-website" target="_blank">View on GitHub</a>
+                </div>
+                <div>
+                    <h3>Resume Keywords Highlighter</h3>
+                    <p>Technologies: HTML, CSS, JavaScript, Python, Flask, MongoDB</p>
+                    <p>Developed a tool to highlight key terms in resumes...</p>
+                    <a href="https://github.com/AdeshBhongale/resume-keywords-highlighter" target="_blank">View on GitHub</a>
+                </div>
+                <div>
+                    <h3>IPL Score and Winner Prediction</h3>
+                    <p>Technologies: HTML, CSS, JavaScript, Python, Flask</p>
+                    <p>Developed a machine learning model for IPL score prediction...</p>
+                    <a href="https://github.com/AdeshBhongale/ipl-score-prediction" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="grid">
+                <div>
+                    <h3>B.Tech, Computer Science and Engineering</h3>
+                    <p>KIT's College Of Engineering, Kolhapur</p>
+                    <p>GPA: 8.0</p>
+                </div>
+                <div>
+                    <h3>Class 12th (HSC)</h3>
+                    <p>Balaji Junior College, Ichalkaranji</p>
+                    <p>Percentage: 92.33%</p>
+                </div>
+                <div>
+                    <h3>Class 10th (SSC)</h3>
+                    <p>Kabnoor High School Kabnoor, Ichalkaranji</p>
+                    <p>Percentage: 90.40%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AI-ML Virtual Internship Certification from Eduskills Foundation and AWS Academy</li>
+                <li>Certifications of Database, Java, C, HTML from IIT Bombay</li>
+                <li>DSA and OOPs With Java Certification from APTTECK</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
